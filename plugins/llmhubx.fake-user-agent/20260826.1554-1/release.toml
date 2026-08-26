@@ -1,0 +1,10 @@
+id = "llmhubx.fake-user-agent"
+version = "20260826.1554-1"
+target_abi_level = 1
+
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.fake-user-agent/20260826.1554-1/fake-user-agent_20260826.1554-1.lhxp"
+sha256 = "3de8b8b354c0dc4cce3d333f31e235b597bfc3edc90ec6c2880f9c2accc8ba89"
+runtimes = ["extism/v1", "cmw/v1"]
+languages = ["rust"]
+permissions = ["request.headers.write"]
+hooks = ["request-transform"]

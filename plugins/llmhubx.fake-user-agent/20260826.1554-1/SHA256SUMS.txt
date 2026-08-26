@@ -1,0 +1,2 @@
+3de8b8b354c0dc4cce3d333f31e235b597bfc3edc90ec6c2880f9c2accc8ba89  fake-user-agent_20260826.1554-1.lhxp
+4771894b360f909a0eff1d74aac16e6e8c9e1dba5d3a6dd4f31a7ecf3f09038f  CHANGELOG.md
