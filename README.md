@@ -92,6 +92,20 @@ shasum -a 256 ~/Downloads/LLMHubX_20260826.1420-1_aarch64.dmg
 | 下载 | [minimize-reasoning_20260826.1021-1.lhxp](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/minimize-reasoning_20260826.1021-1.lhxp?raw=1) |
 | 版本信息 | [release.toml](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/release.toml) · [CHANGELOG](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/SHA256SUMS.txt) |
 
+### Fake User Agent · 虚拟身份
+
+使用用户配置的 User-Agent 替换客户端原始身份，再将请求发送给 Provider。首次启用时填写身份，之后可以在插件编辑界面继续修改。
+
+| 项目 | 内容 |
+|---|---|
+| 插件 ID | `llmhubx.fake-user-agent` |
+| 版本 | `20260826.1554-1` |
+| Runtime | Extism v1、CMW v1 |
+| Hook | `request-transform` |
+| 权限 | `request.headers.write`，授权范围限定为 `user-agent` |
+| 下载 | [fake-user-agent_20260826.1554-1.lhxp](./plugins/llmhubx.fake-user-agent/20260826.1554-1/fake-user-agent_20260826.1554-1.lhxp?raw=1) |
+| 版本信息 | [release.toml](./plugins/llmhubx.fake-user-agent/20260826.1554-1/release.toml) · [CHANGELOG](./plugins/llmhubx.fake-user-agent/20260826.1554-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.fake-user-agent/20260826.1554-1/SHA256SUMS.txt) |
+
 ## 发布与目录规则
 
 - App 通过 GitHub Release 分发；只有 App Release 会标记为 GitHub `Latest`。
