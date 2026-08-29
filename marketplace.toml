@@ -1,11 +1,11 @@
 [app]
-version = "20260829.2102-1"
+version = "20260830.0010-1"
 current_abi_level = 1
 min_abi_level = 1
-release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260829.2102-1"
-download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.2102-1/LLMHubX_20260829.2102-1_aarch64.dmg"
-sha256 = "d09ddac41b7905697ed930a58c12d64f926d4ce98d03a022a9080661727d6924"
-changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.2102-1/app-CHANGELOG.md"
+release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260830.0010-1"
+download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.0010-1/LLMHubX_20260830.0010-1_aarch64.dmg"
+sha256 = "7a2a31cc1076e1ae19c778ed9660fa1e3bce45f27633981f15279ee690c80e37"
+changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.0010-1/app-CHANGELOG.md"
 
 [abi]
 current_level = 1
@@ -109,8 +109,8 @@ summary = "为长期对话维护滚动摘要与近期原文"
 description = "参考 Pi Agent compaction 行为，为 Steward Agent 构建可审计的时间顺序 ContextView。"
 publisher_name = "LLMHubX"
 license = "MIT"
-latest = "plugins/llmhubx.pi-context/20260829.2102-1/release.toml"
-version = "20260829.2102-1"
+latest = "plugins/llmhubx.pi-context/20260830.0010-1/release.toml"
+version = "20260830.0010-1"
 target_abi_level = 1
 language = "rust"
 permissions = ["agent.context.inference", "resource.kv.read", "resource.kv.write"]
@@ -118,5 +118,5 @@ hooks = []
 provides = []
 requires = ["resource.kv"]
 contributions = ["context:pi-context"]
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.pi-context/20260829.2102-1/pi-context_20260829.2102-1.lhxp"
-sha256 = "d4128af4e7aebeb058004ef5e5217dd17de4bcd089b17776525216f2c6dd4f9a"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.pi-context/20260830.0010-1/pi-context_20260830.0010-1.lhxp"
+sha256 = "9d719cd38be2303ec3bcdb32ad8aab6faa048c1d1011a8943e99629608158189"
