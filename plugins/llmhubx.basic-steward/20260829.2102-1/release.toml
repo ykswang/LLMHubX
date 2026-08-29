@@ -1,0 +1,11 @@
+id = "llmhubx.basic-steward"
+version = "20260829.2102-1"
+target_abi_level = 1
+language = "rust"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.basic-steward/20260829.2102-1/basic-steward_20260829.2102-1.lhxp"
+sha256 = "9ad6fa07396df42798615ab543f2639cde602963541a5e06f90515103418a266"
+permissions = []
+hooks = []
+provides = []
+requires = []
+contributions = ["steward:basic-steward"]

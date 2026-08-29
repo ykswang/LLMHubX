@@ -1,0 +1,11 @@
+id = "llmhubx.pi-context"
+version = "20260829.2102-1"
+target_abi_level = 1
+language = "rust"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.pi-context/20260829.2102-1/pi-context_20260829.2102-1.lhxp"
+sha256 = "d4128af4e7aebeb058004ef5e5217dd17de4bcd089b17776525216f2c6dd4f9a"
+permissions = ["agent.context.inference", "resource.kv.read", "resource.kv.write"]
+hooks = []
+provides = []
+requires = ["resource.kv"]
+contributions = ["context:pi-context"]
