@@ -1,11 +1,11 @@
 [app]
-version = "20260826.1911-1"
+version = "20260829.1024-1"
 current_abi_level = 1
 min_abi_level = 1
-release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260826.1911-1"
-download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260826.1911-1/LLMHubX_20260826.1911-1_aarch64.dmg"
-sha256 = "f637fa65961b413dc750751c1ef26ea4ef81f6a0ed7483cd006fed6967c8e2ed"
-changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260826.1911-1/app-CHANGELOG.md"
+release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260829.1024-1"
+download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1024-1/LLMHubX_20260829.1024-1_aarch64.dmg"
+sha256 = "a18c3a2ba24e85a595e6e3060e68bcafa320bb0e21fdb01476f1ccee79dce35f"
+changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1024-1/app-CHANGELOG.md"
 
 [abi]
 current_level = 1
@@ -13,54 +13,20 @@ lts_levels = [1]
 
 [[abi.packages]]
 level = 1
-version = "20260826.1021-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/1/20260826.1021-1/LLMHubX_Plugin_ABI_20260826.1021-1.tar.gz"
-sha256 = "f73eaf88647b8e39e52472dcf8ad02b1acef03f0b2610a7e83b893da5ffcee3c"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/1/20260826.1021-1"
+version = "20260829.1024-1"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/1/20260829.1024-1/LLMHubX_Plugin_ABI_20260829.1024-1.tar.gz"
+sha256 = "0ac3cb78b19a5630edc24fec9ea7451e7d331505d8fe5d912c52ae8ef964dc84"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/1/20260829.1024-1"
 
 [[sdks]]
-runtime = "extism/v1"
 language = "rust"
 target_abi_level = 1
-version = "20260826.1021-1"
-release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/extism/v1/rust/1/20260826.1021-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/extism/v1/rust/1/20260826.1021-1/LLMHubX_Plugin_SDK_Extism_Rust_20260826.1021-1.tar.gz"
-sha256 = "14137822e0f9b5dc3a5bd48e40b4206917aa775a307372e607474aff74b4f7d6"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/extism/v1/rust/1/20260826.1021-1"
-changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/extism/v1/rust/1/20260826.1021-1/CHANGELOG.md"
-
-[[sdks]]
-runtime = "extism/v1"
-language = "javascript"
-target_abi_level = 1
-version = "20260826.1021-1"
-release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/extism/v1/javascript/1/20260826.1021-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/extism/v1/javascript/1/20260826.1021-1/LLMHubX_Plugin_SDK_Extism_JavaScript_20260826.1021-1.tar.gz"
-sha256 = "f5e814072b7acc7e9b2197f1a1959a22c8d7920e728130fa9a6e7de423c24524"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/extism/v1/javascript/1/20260826.1021-1"
-changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/extism/v1/javascript/1/20260826.1021-1/CHANGELOG.md"
-
-[[sdks]]
-runtime = "extism/v1"
-language = "typescript"
-target_abi_level = 1
-version = "20260826.1021-1"
-release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/extism/v1/typescript/1/20260826.1021-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/extism/v1/typescript/1/20260826.1021-1/LLMHubX_Plugin_SDK_Extism_TypeScript_20260826.1021-1.tar.gz"
-sha256 = "e8e1c0e330175e75ad484dbc43a686da3e90e78e1b97735d1ec0d154d6a0e113"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/extism/v1/typescript/1/20260826.1021-1"
-changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/extism/v1/typescript/1/20260826.1021-1/CHANGELOG.md"
-
-[[sdks]]
-runtime = "cmw/v1"
-language = "rust"
-target_abi_level = 1
-version = "20260826.1021-1"
-release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/v1/rust/1/20260826.1021-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/v1/rust/1/20260826.1021-1/LLMHubX_Plugin_SDK_CMW_Rust_20260826.1021-1.tar.gz"
-sha256 = "b2c0ba04a7f0cfa4363d248cf19b8edb94d11dca2e32261c7565594817d66a67"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/v1/rust/1/20260826.1021-1"
-changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/v1/rust/1/20260826.1021-1/CHANGELOG.md"
+version = "20260829.1024-1"
+release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.1024-1"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.1024-1/LLMHubX_Plugin_SDK_CMW_Rust_20260829.1024-1.tar.gz"
+sha256 = "c632cb0e420970da98711f83b8828c1820f009a674554aa98a36af203ddb8a61"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.1024-1"
+changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.1024-1/CHANGELOG.md"
 
 [[plugins]]
 id = "llmhubx.minimize-reasoning"
@@ -68,15 +34,16 @@ name = "最小化思考"
 summary = "关闭思考，或选择当前成员支持的最低思考档位。"
 description = "在实际 Route 成员支持关闭思考时关闭思考；否则选择该成员公开的最低思考档位。"
 publisher_name = "LLMHubX"
-latest = "plugins/llmhubx.minimize-reasoning/20260826.1021-1/release.toml"
-version = "20260826.1021-1"
+latest = "plugins/llmhubx.minimize-reasoning/20260829.1024-1/release.toml"
+version = "20260829.1024-1"
 target_abi_level = 1
-runtimes = ["extism/v1", "cmw/v1"]
-languages = ["rust"]
+language = "rust"
 permissions = ["request.reasoning.write", "observation.annotate"]
 hooks = ["member-request-transform"]
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.minimize-reasoning/20260826.1021-1/minimize-reasoning_20260826.1021-1.lhxp"
-sha256 = "3ddc4ee0a095057a29d2cb75671394e850f367f4204198130bf6bcafda3fbe7c"
+provides = []
+requires = []
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.minimize-reasoning/20260829.1024-1/minimize-reasoning_20260829.1024-1.lhxp"
+sha256 = "528aa70d7eebb47e2b11d5b1fd3307f5183125bb671c1ad52df5da04bd9f3084"
 
 [[plugins]]
 id = "llmhubx.fake-user-agent"
@@ -84,12 +51,30 @@ name = "Fake User Agent"
 summary = "虚拟身份"
 description = "使用用户配置的 User-Agent 替换客户端原始身份，再将请求发送给 Provider。"
 publisher_name = "LLMHubX"
-latest = "plugins/llmhubx.fake-user-agent/20260826.1554-1/release.toml"
-version = "20260826.1554-1"
+latest = "plugins/llmhubx.fake-user-agent/20260829.1024-1/release.toml"
+version = "20260829.1024-1"
 target_abi_level = 1
-runtimes = ["extism/v1", "cmw/v1"]
-languages = ["rust"]
+language = "rust"
 permissions = ["request.headers.write"]
 hooks = ["request-transform"]
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.fake-user-agent/20260826.1554-1/fake-user-agent_20260826.1554-1.lhxp"
-sha256 = "3de8b8b354c0dc4cce3d333f31e235b597bfc3edc90ec6c2880f9c2accc8ba89"
+provides = []
+requires = []
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.fake-user-agent/20260829.1024-1/fake-user-agent_20260829.1024-1.lhxp"
+sha256 = "a31cd793a4a5230d694aaeea6e970ce2b6bdf56ae314056956001fa9353b9d28"
+
+[[plugins]]
+id = "llmhubx.resource-sqlite"
+name = "SQLite Resource Provider"
+summary = "隔离的 KV 与关系数据"
+description = "在受限 Workspace 中使用 SQLite 提供中性的 KV 与关系数据能力。"
+publisher_name = "LLMHubX"
+latest = "plugins/llmhubx.resource-sqlite/20260829.1024-1/release.toml"
+version = "20260829.1024-1"
+target_abi_level = 1
+language = "rust"
+permissions = ["resource.provider.workspace"]
+hooks = []
+provides = ["resource.kv", "resource.relational"]
+requires = []
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.resource-sqlite/20260829.1024-1/resource-sqlite_20260829.1024-1.lhxp"
+sha256 = "01f64df5889f57fc71fe09ddfd36748179845b79e61c8e13e266183f92970a94"

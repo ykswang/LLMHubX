@@ -6,12 +6,12 @@
 
 集中管理上游 Provider、模型与凭证，通过统一的本地入口连接 Codex、Claude Code、Kiro 等客户端，并在请求执行链中提供路由、观测和受控 WASM 插件能力。
 
-[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260826.1911-1/LLMHubX_20260826.1911-1_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260826.1911-1) · [Marketplace 索引](./marketplace.toml)
+[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1024-1/LLMHubX_20260829.1024-1_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260829.1024-1) · [Marketplace 索引](./marketplace.toml)
 
 ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-111827?style=flat-square&logo=apple&logoColor=white)
-![App](https://img.shields.io/badge/App-20260826.1911--1-2563eb?style=flat-square)
+![App](https://img.shields.io/badge/App-20260829.1024--1-2563eb?style=flat-square)
 ![Plugin ABI](https://img.shields.io/badge/Plugin%20ABI-Level%201-059669?style=flat-square)
-![WASM](https://img.shields.io/badge/Plugins-Extism%20%7C%20CMW-7c3aed?style=flat-square)
+![WASM](https://img.shields.io/badge/Plugins-CMW-7c3aed?style=flat-square)
 
 </div>
 
@@ -25,12 +25,12 @@
 | 🔐 | 集中管理凭证 | 上游 API Key 保留在 LLMHubX 中，客户端只使用本地地址和本地访问凭证。 |
 | 🧭 | 统一模型入口 | 将客户端使用的逻辑 Model ID 映射到 Provider Route，集中维护模型与路由配置。 |
 | 🔎 | 请求观测 | 在独立观测窗口查看请求、执行链路、延迟和插件队列状态。 |
-| 🧩 | 受控插件 | 通过 Extism 或 CMW 运行 WASM 插件，并在安装时明确展示 Hook 与数据权限。 |
-| 🛠️ | 开发工具链 | 提供版本化 ABI、Rust / JavaScript / TypeScript SDK、模板与 conformance 工具。 |
+| 🧩 | 受控插件 | 通过 CMW 运行 WASM 插件，并在安装时明确展示 Hook、Resource 能力与数据权限。 |
+| 🛠️ | 开发工具链 | 提供版本化 ABI、CMW Rust SDK、模板与 conformance 工具。 |
 
 ## 快速开始
 
-1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260826.1911-1/LLMHubX_20260826.1911-1_aarch64.dmg)。
+1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1024-1/LLMHubX_20260829.1024-1_aarch64.dmg)。
 2. 打开 DMG，将 `LLMHubX.app` 拖入“应用程序”。
 3. 在 LLMHubX 中配置 Provider、上游模型、逻辑模型和本地 API Key。
 4. 在外部客户端中使用 LLMHubX 生成的本地地址与访问配置。
@@ -39,23 +39,23 @@
 
 | 项目 | 当前版本 |
 |---|---|
-| 版本 | `20260826.1911-1` |
+| 版本 | `20260829.1024-1` |
 | 平台 | macOS · Apple Silicon |
 | Plugin ABI | 当前 Level 1 · 最低兼容 Level 1 |
-| 安装包 | [LLMHubX_20260826.1911-1_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260826.1911-1/LLMHubX_20260826.1911-1_aarch64.dmg) |
-| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260826.1911-1) |
-| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260826.1911-1/SHA256SUMS.txt) |
+| 安装包 | [LLMHubX_20260829.1024-1_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1024-1/LLMHubX_20260829.1024-1_aarch64.dmg) |
+| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260829.1024-1) |
+| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1024-1/SHA256SUMS.txt) |
 
 下载后可在终端核对文件：
 
 ```bash
-shasum -a 256 ~/Downloads/LLMHubX_20260826.1911-1_aarch64.dmg
+shasum -a 256 ~/Downloads/LLMHubX_20260829.1024-1_aarch64.dmg
 ```
 
 将输出与 Release 中的 `SHA256SUMS.txt` 对比。
 
 > [!IMPORTANT]
-> 当前 `20260826.1911-1` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
+> 当前 `20260829.1024-1` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
 
 ## 插件开发
 
@@ -65,16 +65,13 @@ shasum -a 256 ~/Downloads/LLMHubX_20260826.1911-1_aarch64.dmg
 
 | ABI Level | 版本 | 下载 | 说明与变更 | 校验 |
 |---:|---|---|---|---|
-| 1 | `20260826.1021-1` | [tar.gz](./abi/1/20260826.1021-1/LLMHubX_Plugin_ABI_20260826.1021-1.tar.gz?raw=1) | [目录](./abi/1/20260826.1021-1/) · [CHANGELOG](./abi/1/20260826.1021-1/CHANGELOG.md) | [SHA256SUMS](./abi/1/20260826.1021-1/SHA256SUMS.txt) |
+| 1 | `20260829.1024-1` | [tar.gz](./abi/1/20260829.1024-1/LLMHubX_Plugin_ABI_20260829.1024-1.tar.gz?raw=1) | [目录](./abi/1/20260829.1024-1/) · [CHANGELOG](./abi/1/20260829.1024-1/CHANGELOG.md) | [SHA256SUMS](./abi/1/20260829.1024-1/SHA256SUMS.txt) |
 
 ### SDK
 
 | Runtime | 语言 | Target ABI | 版本 | 下载 | 文档 |
 |---|---|---:|---|---|---|
-| Extism v1 | Rust | 1 | `20260826.1021-1` | [tar.gz](./sdks/extism/v1/rust/1/20260826.1021-1/LLMHubX_Plugin_SDK_Extism_Rust_20260826.1021-1.tar.gz?raw=1) | [目录与更新说明](./sdks/extism/v1/rust/1/20260826.1021-1/) |
-| Extism v1 | JavaScript | 1 | `20260826.1021-1` | [tar.gz](./sdks/extism/v1/javascript/1/20260826.1021-1/LLMHubX_Plugin_SDK_Extism_JavaScript_20260826.1021-1.tar.gz?raw=1) | [目录与更新说明](./sdks/extism/v1/javascript/1/20260826.1021-1/) |
-| Extism v1 | TypeScript | 1 | `20260826.1021-1` | [tar.gz](./sdks/extism/v1/typescript/1/20260826.1021-1/LLMHubX_Plugin_SDK_Extism_TypeScript_20260826.1021-1.tar.gz?raw=1) | [目录与更新说明](./sdks/extism/v1/typescript/1/20260826.1021-1/) |
-| CMW v1 | Rust | 1 | `20260826.1021-1` | [tar.gz](./sdks/cmw/v1/rust/1/20260826.1021-1/LLMHubX_Plugin_SDK_CMW_Rust_20260826.1021-1.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/v1/rust/1/20260826.1021-1/) |
+| CMW | Rust | 1 | `20260829.1024-1` | [tar.gz](./sdks/cmw/rust/1/20260829.1024-1/LLMHubX_Plugin_SDK_CMW_Rust_20260829.1024-1.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/1/20260829.1024-1/) |
 
 ## 官方插件
 
@@ -85,12 +82,12 @@ shasum -a 256 ~/Downloads/LLMHubX_20260826.1911-1_aarch64.dmg
 | 项目 | 内容 |
 |---|---|
 | 插件 ID | `llmhubx.minimize-reasoning` |
-| 版本 | `20260826.1021-1` |
-| Runtime | Extism v1、CMW v1 |
+| 版本 | `20260829.1024-1` |
+| Runtime | CMW |
 | Hook | `member-request-transform` |
 | 权限 | `request.reasoning.write`、`observation.annotate` |
-| 下载 | [minimize-reasoning_20260826.1021-1.lhxp](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/minimize-reasoning_20260826.1021-1.lhxp?raw=1) |
-| 版本信息 | [release.toml](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/release.toml) · [CHANGELOG](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.minimize-reasoning/20260826.1021-1/SHA256SUMS.txt) |
+| 下载 | [minimize-reasoning_20260829.1024-1.lhxp](./plugins/llmhubx.minimize-reasoning/20260829.1024-1/minimize-reasoning_20260829.1024-1.lhxp?raw=1) |
+| 版本信息 | [release.toml](./plugins/llmhubx.minimize-reasoning/20260829.1024-1/release.toml) · [CHANGELOG](./plugins/llmhubx.minimize-reasoning/20260829.1024-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.minimize-reasoning/20260829.1024-1/SHA256SUMS.txt) |
 
 ### Fake User Agent · 虚拟身份
 
@@ -99,12 +96,26 @@ shasum -a 256 ~/Downloads/LLMHubX_20260826.1911-1_aarch64.dmg
 | 项目 | 内容 |
 |---|---|
 | 插件 ID | `llmhubx.fake-user-agent` |
-| 版本 | `20260826.1554-1` |
-| Runtime | Extism v1、CMW v1 |
+| 版本 | `20260829.1024-1` |
+| Runtime | CMW |
 | Hook | `request-transform` |
 | 权限 | `request.headers.write`，授权范围限定为 `user-agent` |
-| 下载 | [fake-user-agent_20260826.1554-1.lhxp](./plugins/llmhubx.fake-user-agent/20260826.1554-1/fake-user-agent_20260826.1554-1.lhxp?raw=1) |
-| 版本信息 | [release.toml](./plugins/llmhubx.fake-user-agent/20260826.1554-1/release.toml) · [CHANGELOG](./plugins/llmhubx.fake-user-agent/20260826.1554-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.fake-user-agent/20260826.1554-1/SHA256SUMS.txt) |
+| 下载 | [fake-user-agent_20260829.1024-1.lhxp](./plugins/llmhubx.fake-user-agent/20260829.1024-1/fake-user-agent_20260829.1024-1.lhxp?raw=1) |
+| 版本信息 | [release.toml](./plugins/llmhubx.fake-user-agent/20260829.1024-1/release.toml) · [CHANGELOG](./plugins/llmhubx.fake-user-agent/20260829.1024-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.fake-user-agent/20260829.1024-1/SHA256SUMS.txt) |
+
+### SQLite Resource Provider
+
+在受限 Workspace 中使用 SQLite 提供中性的 KV 与关系数据能力。
+
+| 项目 | 内容 |
+|---|---|
+| 插件 ID | `llmhubx.resource-sqlite` |
+| 版本 | `20260829.1024-1` |
+| Runtime | CMW |
+| 提供能力 | `resource.kv`、`resource.relational` |
+| 权限 | `resource.provider.workspace` |
+| 下载 | [resource-sqlite_20260829.1024-1.lhxp](./plugins/llmhubx.resource-sqlite/20260829.1024-1/resource-sqlite_20260829.1024-1.lhxp?raw=1) |
+| 版本信息 | [release.toml](./plugins/llmhubx.resource-sqlite/20260829.1024-1/release.toml) · [CHANGELOG](./plugins/llmhubx.resource-sqlite/20260829.1024-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.resource-sqlite/20260829.1024-1/SHA256SUMS.txt) |
 
 ## 发布与目录规则
 

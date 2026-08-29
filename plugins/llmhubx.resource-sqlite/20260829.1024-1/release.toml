@@ -1,0 +1,10 @@
+id = "llmhubx.resource-sqlite"
+version = "20260829.1024-1"
+target_abi_level = 1
+language = "rust"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.resource-sqlite/20260829.1024-1/resource-sqlite_20260829.1024-1.lhxp"
+sha256 = "01f64df5889f57fc71fe09ddfd36748179845b79e61c8e13e266183f92970a94"
+permissions = ["resource.provider.workspace"]
+hooks = []
+provides = ["resource.kv", "resource.relational"]
+requires = []

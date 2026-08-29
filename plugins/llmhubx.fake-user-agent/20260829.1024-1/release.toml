@@ -1,0 +1,11 @@
+id = "llmhubx.fake-user-agent"
+version = "20260829.1024-1"
+target_abi_level = 1
+previous = "../20260826.1554-1/release.toml"
+language = "rust"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.fake-user-agent/20260829.1024-1/fake-user-agent_20260829.1024-1.lhxp"
+sha256 = "a31cd793a4a5230d694aaeea6e970ce2b6bdf56ae314056956001fa9353b9d28"
+permissions = ["request.headers.write"]
+hooks = ["request-transform"]
+provides = []
+requires = []

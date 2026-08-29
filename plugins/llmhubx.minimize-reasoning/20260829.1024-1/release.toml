@@ -1,0 +1,11 @@
+id = "llmhubx.minimize-reasoning"
+version = "20260829.1024-1"
+target_abi_level = 1
+previous = "../20260826.1021-1/release.toml"
+language = "rust"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.minimize-reasoning/20260829.1024-1/minimize-reasoning_20260829.1024-1.lhxp"
+sha256 = "528aa70d7eebb47e2b11d5b1fd3307f5183125bb671c1ad52df5da04bd9f3084"
+permissions = ["request.reasoning.write", "observation.annotate"]
+hooks = ["member-request-transform"]
+provides = []
+requires = []
