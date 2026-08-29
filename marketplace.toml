@@ -1,11 +1,11 @@
 [app]
-version = "20260829.1955-1"
+version = "20260829.2102-1"
 current_abi_level = 1
 min_abi_level = 1
-release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260829.1955-1"
-download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1955-1/LLMHubX_20260829.1955-1_aarch64.dmg"
-sha256 = "d64da1113895d86d979ec3c173c213a651b447e46a00ed1827eec9d2fb26eb56"
-changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.1955-1/app-CHANGELOG.md"
+release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260829.2102-1"
+download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.2102-1/LLMHubX_20260829.2102-1_aarch64.dmg"
+sha256 = "d09ddac41b7905697ed930a58c12d64f926d4ce98d03a022a9080661727d6924"
+changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260829.2102-1/app-CHANGELOG.md"
 
 [abi]
 current_level = 1
@@ -13,20 +13,20 @@ lts_levels = [1]
 
 [[abi.packages]]
 level = 1
-version = "20260829.1024-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/1/20260829.1024-1/LLMHubX_Plugin_ABI_20260829.1024-1.tar.gz"
-sha256 = "0ac3cb78b19a5630edc24fec9ea7451e7d331505d8fe5d912c52ae8ef964dc84"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/1/20260829.1024-1"
+version = "20260829.2102-1"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/1/20260829.2102-1/LLMHubX_Plugin_ABI_20260829.2102-1.tar.gz"
+sha256 = "2c34797d6bd9031848499a158c6afb3750a9b3673cbc4f1b7a50c59545d7728b"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/1/20260829.2102-1"
 
 [[sdks]]
 language = "rust"
 target_abi_level = 1
-version = "20260829.1024-1"
-release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.1024-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.1024-1/LLMHubX_Plugin_SDK_CMW_Rust_20260829.1024-1.tar.gz"
-sha256 = "c632cb0e420970da98711f83b8828c1820f009a674554aa98a36af203ddb8a61"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.1024-1"
-changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.1024-1/CHANGELOG.md"
+version = "20260829.2102-1"
+release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.2102-1"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.2102-1/LLMHubX_Plugin_SDK_CMW_Rust_20260829.2102-1.tar.gz"
+sha256 = "43da0a8c4e9abc7d46e683f766d07f8c1140562c6e35cc5d1b3ed859a35a5852"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.2102-1"
+changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.2102-1/CHANGELOG.md"
 
 [[plugins]]
 id = "llmhubx.minimize-reasoning"
@@ -34,16 +34,17 @@ name = "最小化思考"
 summary = "关闭思考，或选择当前成员支持的最低思考档位。"
 description = "在实际 Route 成员支持关闭思考时关闭思考；否则选择该成员公开的最低思考档位。"
 publisher_name = "LLMHubX"
-latest = "plugins/llmhubx.minimize-reasoning/20260829.1024-1/release.toml"
-version = "20260829.1024-1"
+latest = "plugins/llmhubx.minimize-reasoning/20260829.2102-1/release.toml"
+version = "20260829.2102-1"
 target_abi_level = 1
 language = "rust"
 permissions = ["request.reasoning.write", "observation.annotate"]
 hooks = ["member-request-transform"]
 provides = []
 requires = []
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.minimize-reasoning/20260829.1024-1/minimize-reasoning_20260829.1024-1.lhxp"
-sha256 = "528aa70d7eebb47e2b11d5b1fd3307f5183125bb671c1ad52df5da04bd9f3084"
+contributions = []
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.minimize-reasoning/20260829.2102-1/minimize-reasoning_20260829.2102-1.lhxp"
+sha256 = "fb39c24bab813fd82783a0c995aa3b5660049c525532f285fa73fcaf4622dfa5"
 
 [[plugins]]
 id = "llmhubx.fake-user-agent"
@@ -51,16 +52,17 @@ name = "Fake User Agent"
 summary = "虚拟身份"
 description = "使用用户配置的 User-Agent 替换客户端原始身份，再将请求发送给 Provider。"
 publisher_name = "LLMHubX"
-latest = "plugins/llmhubx.fake-user-agent/20260829.1024-1/release.toml"
-version = "20260829.1024-1"
+latest = "plugins/llmhubx.fake-user-agent/20260829.2102-1/release.toml"
+version = "20260829.2102-1"
 target_abi_level = 1
 language = "rust"
 permissions = ["request.headers.write"]
 hooks = ["request-transform"]
 provides = []
 requires = []
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.fake-user-agent/20260829.1024-1/fake-user-agent_20260829.1024-1.lhxp"
-sha256 = "a31cd793a4a5230d694aaeea6e970ce2b6bdf56ae314056956001fa9353b9d28"
+contributions = []
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.fake-user-agent/20260829.2102-1/fake-user-agent_20260829.2102-1.lhxp"
+sha256 = "a5ccf3e9d0709d0f5d67f00f4495aed8c560664764877e9ca45772bee38b5abf"
 
 [[plugins]]
 id = "llmhubx.resource-sqlite"
@@ -68,13 +70,53 @@ name = "SQLite Resource Provider"
 summary = "隔离的 KV 与关系数据"
 description = "在受限 Workspace 中使用 SQLite 提供中性的 KV 与关系数据能力。"
 publisher_name = "LLMHubX"
-latest = "plugins/llmhubx.resource-sqlite/20260829.1024-1/release.toml"
-version = "20260829.1024-1"
+latest = "plugins/llmhubx.resource-sqlite/20260829.2102-1/release.toml"
+version = "20260829.2102-1"
 target_abi_level = 1
 language = "rust"
 permissions = ["resource.provider.workspace"]
 hooks = []
 provides = ["resource.kv", "resource.relational"]
 requires = []
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.resource-sqlite/20260829.1024-1/resource-sqlite_20260829.1024-1.lhxp"
-sha256 = "01f64df5889f57fc71fe09ddfd36748179845b79e61c8e13e266183f92970a94"
+contributions = []
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.resource-sqlite/20260829.2102-1/resource-sqlite_20260829.2102-1.lhxp"
+sha256 = "fc378c9f9066d47f9ec025da3758f212dcc1cd66c0704274deab7c71516dc1c2"
+
+[[plugins]]
+id = "llmhubx.basic-steward"
+name = "Basic Steward"
+summary = "直接、自然地帮助你完成当前对话"
+description = "提供 LLMHubX 官方基础管家模型和稳定的 Agent 定义。"
+publisher_name = "LLMHubX"
+license = "MIT"
+icon = "assets/steward.svg"
+latest = "plugins/llmhubx.basic-steward/20260829.2102-1/release.toml"
+version = "20260829.2102-1"
+target_abi_level = 1
+language = "rust"
+permissions = []
+hooks = []
+provides = []
+requires = []
+contributions = ["steward:basic-steward"]
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.basic-steward/20260829.2102-1/basic-steward_20260829.2102-1.lhxp"
+sha256 = "9ad6fa07396df42798615ab543f2639cde602963541a5e06f90515103418a266"
+
+[[plugins]]
+id = "llmhubx.pi-context"
+name = "Pi Context"
+summary = "为长期对话维护滚动摘要与近期原文"
+description = "参考 Pi Agent compaction 行为，为 Steward Agent 构建可审计的时间顺序 ContextView。"
+publisher_name = "LLMHubX"
+license = "MIT"
+latest = "plugins/llmhubx.pi-context/20260829.2102-1/release.toml"
+version = "20260829.2102-1"
+target_abi_level = 1
+language = "rust"
+permissions = ["agent.context.inference", "resource.kv.read", "resource.kv.write"]
+hooks = []
+provides = []
+requires = ["resource.kv"]
+contributions = ["context:pi-context"]
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.pi-context/20260829.2102-1/pi-context_20260829.2102-1.lhxp"
+sha256 = "d4128af4e7aebeb058004ef5e5217dd17de4bcd089b17776525216f2c6dd4f9a"
