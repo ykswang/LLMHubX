@@ -1,0 +1,11 @@
+id = "llmhubx.general-expert"
+version = "20260830.1046-2"
+target_abi_level = 2
+language = "rust"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.general-expert/20260830.1046-2/general-expert_20260830.1046-2.lhxp"
+sha256 = "b9959ac94110fdb936e969d73153477645dab6ff71f82ef25e0a2dcd6a3c7148"
+permissions = []
+hooks = []
+provides = []
+requires = []
+contributions = ["expert:general-expert"]
