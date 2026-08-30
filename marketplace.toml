@@ -1,14 +1,14 @@
 [app]
-version = "20260830.0106-1"
-current_abi_level = 1
+version = "20260830.1046-2"
+current_abi_level = 2
 min_abi_level = 1
-release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260830.0106-1"
-download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.0106-1/LLMHubX_20260830.0106-1_aarch64.dmg"
-sha256 = "bd9eaf3e88f6f67c078e4f138d6d5587bac06e02e61953892909f8f33d4d8774"
-changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.0106-1/app-CHANGELOG.md"
+release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260830.1046-2"
+download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1046-2/LLMHubX_20260830.1046-2_aarch64.dmg"
+sha256 = "ad5b086f7d14a944c3d0135949106f28181a2749a72ac61d5d95a6acaa04e90e"
+changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1046-2/app-CHANGELOG.md"
 
 [abi]
-current_level = 1
+current_level = 2
 lts_levels = [1]
 
 [[abi.packages]]
@@ -17,6 +17,13 @@ version = "20260829.2102-1"
 download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/1/20260829.2102-1/LLMHubX_Plugin_ABI_20260829.2102-1.tar.gz"
 sha256 = "2c34797d6bd9031848499a158c6afb3750a9b3673cbc4f1b7a50c59545d7728b"
 documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/1/20260829.2102-1"
+
+[[abi.packages]]
+level = 2
+version = "20260830.1046-2"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/2/20260830.1046-2/LLMHubX_Plugin_ABI_20260830.1046-2.tar.gz"
+sha256 = "fba6bed36f42d216e486de4c35fd0a1b36c5e23d1235b43f5d955e3579fe3a0e"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/2/20260830.1046-2"
 
 [[sdks]]
 language = "rust"
@@ -27,6 +34,16 @@ download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/
 sha256 = "43da0a8c4e9abc7d46e683f766d07f8c1140562c6e35cc5d1b3ed859a35a5852"
 documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.2102-1"
 changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.2102-1/CHANGELOG.md"
+
+[[sdks]]
+language = "rust"
+target_abi_level = 2
+version = "20260830.1046-2"
+release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/2/20260830.1046-2"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/2/20260830.1046-2/LLMHubX_Plugin_SDK_CMW_Rust_20260830.1046-2.tar.gz"
+sha256 = "90320744fb582689fef384f172be25783c11722887e5b06e61cca3ab70d85a92"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/2/20260830.1046-2"
+changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/2/20260830.1046-2/CHANGELOG.md"
 
 [[plugins]]
 id = "llmhubx.minimize-reasoning"
@@ -90,17 +107,55 @@ description = "提供 LLMHubX 官方基础管家模型和稳定的 Agent 定义�
 publisher_name = "LLMHubX"
 license = "MIT"
 icon = "assets/steward.svg"
-latest = "plugins/llmhubx.basic-steward/20260829.2102-1/release.toml"
-version = "20260829.2102-1"
-target_abi_level = 1
+latest = "plugins/llmhubx.basic-steward/20260830.1046-2/release.toml"
+version = "20260830.1046-2"
+target_abi_level = 2
 language = "rust"
 permissions = []
 hooks = []
 provides = []
 requires = []
 contributions = ["steward:basic-steward"]
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.basic-steward/20260829.2102-1/basic-steward_20260829.2102-1.lhxp"
-sha256 = "9ad6fa07396df42798615ab543f2639cde602963541a5e06f90515103418a266"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.basic-steward/20260830.1046-2/basic-steward_20260830.1046-2.lhxp"
+sha256 = "43b85c113ae613f4f1dde790c9a1583a828462343b44f1635db492a81c5517d0"
+
+[[plugins]]
+id = "llmhubx.basic-workflow"
+name = "Basic Workflow"
+summary = "让管家把较长任务拆成步骤并在后台持续推进"
+description = "提供 LLMHubX 官方基础 Agentic Workflow、角色协议和步骤图策略。"
+publisher_name = "LLMHubX"
+license = "MIT"
+latest = "plugins/llmhubx.basic-workflow/20260830.1046-2/release.toml"
+version = "20260830.1046-2"
+target_abi_level = 2
+language = "rust"
+permissions = []
+hooks = []
+provides = []
+requires = []
+contributions = ["workflow:basic-workflow"]
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.basic-workflow/20260830.1046-2/basic-workflow_20260830.1046-2.lhxp"
+sha256 = "7bf697b6e106f8b62cc89deea4d562e501754d44e7b5fdb472ba04fca1c57111"
+
+[[plugins]]
+id = "llmhubx.general-expert"
+name = "General Expert"
+summary = "处理不依赖外部工具的通用分析、总结、转换与文本生成步骤"
+description = "提供 LLMHubX 官方中性通用专家，作为专业专家缺席时的最后候选。"
+publisher_name = "LLMHubX"
+license = "MIT"
+latest = "plugins/llmhubx.general-expert/20260830.1046-2/release.toml"
+version = "20260830.1046-2"
+target_abi_level = 2
+language = "rust"
+permissions = []
+hooks = []
+provides = []
+requires = []
+contributions = ["expert:general-expert"]
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.general-expert/20260830.1046-2/general-expert_20260830.1046-2.lhxp"
+sha256 = "b9959ac94110fdb936e969d73153477645dab6ff71f82ef25e0a2dcd6a3c7148"
 
 [[plugins]]
 id = "llmhubx.pi-context"
