@@ -6,10 +6,10 @@
 
 集中管理上游 Provider、模型与凭证，通过统一的本地入口连接 Codex、Claude Code、Kiro 等客户端，并在请求执行链中提供路由、观测和受控 WASM 插件能力。
 
-[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1115-2/LLMHubX_20260830.1115-2_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260830.1115-2) · [Marketplace 索引](./marketplace.toml)
+[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260831.1009/LLMHubX_20260831.1009_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260831.1009) · [Marketplace 索引](./marketplace.toml)
 
 ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-111827?style=flat-square&logo=apple&logoColor=white)
-![App](https://img.shields.io/badge/App-20260830.1115--2-2563eb?style=flat-square)
+![App](https://img.shields.io/badge/App-20260831.1009-2563eb?style=flat-square)
 ![Plugin ABI](https://img.shields.io/badge/Plugin%20ABI-Level%202-059669?style=flat-square)
 ![WASM](https://img.shields.io/badge/Plugins-CMW-7c3aed?style=flat-square)
 
@@ -31,7 +31,7 @@
 
 ## 快速开始
 
-1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1115-2/LLMHubX_20260830.1115-2_aarch64.dmg)。
+1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260831.1009/LLMHubX_20260831.1009_aarch64.dmg)。
 2. 打开 DMG，将 `LLMHubX.app` 拖入“应用程序”。
 3. 在 LLMHubX 中配置 Provider、上游模型、逻辑模型和本地 API Key。
 4. 在外部客户端中使用 LLMHubX 生成的本地地址与访问配置。
@@ -40,23 +40,23 @@
 
 | 项目 | 当前版本 |
 |---|---|
-| 版本 | `20260830.1115-2` |
+| 版本 | `20260831.1009` |
 | 平台 | macOS · Apple Silicon |
 | Plugin ABI | 当前 Level 2 · 最低兼容 Level 1 |
-| 安装包 | [LLMHubX_20260830.1115-2_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1115-2/LLMHubX_20260830.1115-2_aarch64.dmg) |
-| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260830.1115-2) |
-| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1115-2/SHA256SUMS.txt) |
+| 安装包 | [LLMHubX_20260831.1009_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260831.1009/LLMHubX_20260831.1009_aarch64.dmg) |
+| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260831.1009) |
+| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260831.1009/SHA256SUMS.txt) |
 
 下载后可在终端核对文件：
 
 ```bash
-shasum -a 256 ~/Downloads/LLMHubX_20260830.1115-2_aarch64.dmg
+shasum -a 256 ~/Downloads/LLMHubX_20260831.1009_aarch64.dmg
 ```
 
 将输出与 Release 中的 `SHA256SUMS.txt` 对比。
 
 > [!IMPORTANT]
-> 当前 `20260830.1115-2` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
+> 当前 `20260831.1009` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
 
 ## 插件开发
 
@@ -73,8 +73,8 @@ shasum -a 256 ~/Downloads/LLMHubX_20260830.1115-2_aarch64.dmg
 
 | Runtime | 语言 | Target ABI | 版本 | 下载 | 文档 |
 |---|---|---:|---|---|---|
-| CMW | Rust | 1 | `20260829.2102-1` | [tar.gz](./sdks/cmw/rust/1/20260829.2102-1/LLMHubX_Plugin_SDK_CMW_Rust_20260829.2102-1.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/1/20260829.2102-1/) |
-| CMW | Rust | 2 | `20260830.1046-2` | [tar.gz](./sdks/cmw/rust/2/20260830.1046-2/LLMHubX_Plugin_SDK_CMW_Rust_20260830.1046-2.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/2/20260830.1046-2/) |
+| CMW | Rust | 1 | `20260831.1009-1` | [tar.gz](./sdks/cmw/rust/1/20260831.1009-1/LLMHubX_Plugin_SDK_CMW_Rust_20260831.1009-1.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/1/20260831.1009-1/) |
+| CMW | Rust | 2 | `20260831.1009-2` | [tar.gz](./sdks/cmw/rust/2/20260831.1009-2/LLMHubX_Plugin_SDK_CMW_Rust_20260831.1009-2.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/2/20260831.1009-2/) |
 
 ## 官方插件
 

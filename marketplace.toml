@@ -1,11 +1,11 @@
 [app]
-version = "20260830.1115-2"
+version = "20260831.1009"
 current_abi_level = 2
 min_abi_level = 1
-release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260830.1115-2"
-download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1115-2/LLMHubX_20260830.1115-2_aarch64.dmg"
-sha256 = "dd1ad4b4dc49fb8514f78ff71c5bd4f0e4b63bd7da257cdbeb82f83fa06c1a90"
-changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260830.1115-2/app-CHANGELOG.md"
+release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260831.1009"
+download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260831.1009/LLMHubX_20260831.1009_aarch64.dmg"
+sha256 = "c3cdb4df0d2fef7cce794b60eeae364d55169557587850f56830cc9c9b9a292a"
+changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260831.1009/app-CHANGELOG.md"
 
 [abi]
 current_level = 2
@@ -28,22 +28,22 @@ documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/2/20260830
 [[sdks]]
 language = "rust"
 target_abi_level = 1
-version = "20260829.2102-1"
-release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.2102-1"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.2102-1/LLMHubX_Plugin_SDK_CMW_Rust_20260829.2102-1.tar.gz"
-sha256 = "43da0a8c4e9abc7d46e683f766d07f8c1140562c6e35cc5d1b3ed859a35a5852"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260829.2102-1"
-changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260829.2102-1/CHANGELOG.md"
+version = "20260831.1009-1"
+release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260831.1009-1"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260831.1009-1/LLMHubX_Plugin_SDK_CMW_Rust_20260831.1009-1.tar.gz"
+sha256 = "7c09d5163afbf3380b22dbbaf79bf869a195c115001671bd09354dcf14f977b4"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/1/20260831.1009-1"
+changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/1/20260831.1009-1/CHANGELOG.md"
 
 [[sdks]]
 language = "rust"
 target_abi_level = 2
-version = "20260830.1046-2"
-release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/2/20260830.1046-2"
-download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/2/20260830.1046-2/LLMHubX_Plugin_SDK_CMW_Rust_20260830.1046-2.tar.gz"
-sha256 = "90320744fb582689fef384f172be25783c11722887e5b06e61cca3ab70d85a92"
-documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/2/20260830.1046-2"
-changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/2/20260830.1046-2/CHANGELOG.md"
+version = "20260831.1009-2"
+release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/2/20260831.1009-2"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/2/20260831.1009-2/LLMHubX_Plugin_SDK_CMW_Rust_20260831.1009-2.tar.gz"
+sha256 = "1860cbff9c405fa756cadb6017b0cde5d7521419a957c63db7876e6b360e4e2c"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/2/20260831.1009-2"
+changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/2/20260831.1009-2/CHANGELOG.md"
 
 [[plugins]]
 id = "llmhubx.minimize-reasoning"
