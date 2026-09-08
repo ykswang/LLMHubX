@@ -6,10 +6,10 @@
 
 集中管理上游 Provider、模型与凭证，通过统一的本地入口连接 Codex、Claude Code、Kiro 等客户端，并在请求执行链中提供路由、观测和受控 WASM 插件能力。
 
-[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.1611-2/LLMHubX_20260908.1611-2_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260908.1611-2) · [Marketplace 索引](./marketplace.toml)
+[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.2233-2/LLMHubX_20260908.2233-2_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260908.2233-2) · [Marketplace 索引](./marketplace.toml)
 
 ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-111827?style=flat-square&logo=apple&logoColor=white)
-![App](https://img.shields.io/badge/App-20260908.1611--2-2563eb?style=flat-square)
+![App](https://img.shields.io/badge/App-20260908.2233--2-2563eb?style=flat-square)
 ![Plugin ABI](https://img.shields.io/badge/Plugin%20ABI-Level%202-059669?style=flat-square)
 ![WASM](https://img.shields.io/badge/Plugins-CMW-7c3aed?style=flat-square)
 
@@ -31,7 +31,7 @@
 
 ## 快速开始
 
-1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.1611-2/LLMHubX_20260908.1611-2_aarch64.dmg)。
+1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.2233-2/LLMHubX_20260908.2233-2_aarch64.dmg)。
 2. 打开 DMG，将 `LLMHubX.app` 拖入“应用程序”。
 3. 在 LLMHubX 中配置 Provider、上游模型、逻辑模型和本地 API Key。
 4. 在外部客户端中使用 LLMHubX 生成的本地地址与访问配置。
@@ -40,30 +40,30 @@
 
 | 项目 | 当前版本 |
 |---|---|
-| 版本 | `20260908.1611-2` |
+| 版本 | `20260908.2233-2` |
 | 平台 | macOS · Apple Silicon |
 | Plugin ABI | 当前 Level 2 · 最低兼容 Level 1 |
-| 安装包 | [LLMHubX_20260908.1611-2_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.1611-2/LLMHubX_20260908.1611-2_aarch64.dmg) |
-| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260908.1611-2) |
-| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.1611-2/SHA256SUMS.txt) |
+| 安装包 | [LLMHubX_20260908.2233-2_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.2233-2/LLMHubX_20260908.2233-2_aarch64.dmg) |
+| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260908.2233-2) |
+| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260908.2233-2/SHA256SUMS.txt) |
 
 下载后可在终端核对文件：
 
 ```bash
-shasum -a 256 ~/Downloads/LLMHubX_20260908.1611-2_aarch64.dmg
+shasum -a 256 ~/Downloads/LLMHubX_20260908.2233-2_aarch64.dmg
 ```
 
 将输出与 Release 中的 `SHA256SUMS.txt` 对比。
 
 > [!IMPORTANT]
-> 当前 `20260908.1611-2` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
+> 当前 `20260908.2233-2` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
 
 > [!WARNING]
-> `20260831.1009` 和 `20260905.0836` 的已发布二进制无法解析自身内部 `.0` 版本；`20260907.0228-2`（界面显示 `20260907.228.2`）也存在前导零解析缺陷。上述版本请手动下载安装 `20260908.1611-2`。本版本不再把新密钥写入 macOS Keychain。首次读取旧配置时可选择一次性导入旧密钥；macOS 可能对每项旧密钥请求一次授权，导入完成后不再访问 Keychain。也可选择“重新配置”，完全跳过 Keychain，并在修改配置前保留备份。
+> `20260831.1009` 和 `20260905.0836` 的已发布二进制无法解析自身内部 `.0` 版本；`20260907.0228-2`（界面显示 `20260907.228.2`）也存在前导零解析缺陷。上述版本请手动下载安装 `20260908.2233-2`。本版本不再把新密钥写入 macOS Keychain。首次读取旧配置时可选择一次性导入旧密钥；macOS 可能对每项旧密钥请求一次授权，导入完成后不再访问 Keychain。也可选择“重新配置”，完全跳过 Keychain，并在修改配置前保留备份。
 
 ### 本次更新
 
-修复凌晨版本丢失时间前导零后无法检查更新的问题；内部版本 `20260907.228.2` 现在可以正确转换为 `20260907.0228-2`。版本解析失败会明确报错，不再误报没有更新。回归测试覆盖全天 1,440 个时间点。详情见[更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260908.1611-2)。
+新增单 Task 观测记录导出：在 Tasks 中选中任务，即可保存 Markdown、JSONL 或 Log。文件包含全部七个子页的原始记录及可用关联请求，保留历史专家与模型、每次尝试、完整结果和缺失说明；请求缓存已不存在时也能导出 Task 主体。默认安全导出，完整模式每次确认，系统保存支持取消、覆盖确认与原子写入。详情见[更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260908.2233-2)。
 
 ## 插件开发
 
