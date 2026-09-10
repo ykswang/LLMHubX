@@ -1,15 +1,15 @@
 [app]
-version = "20260910.1720-2"
-current_abi_level = 2
+version = "20260910.2135-3"
+current_abi_level = 3
 min_abi_level = 1
-release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.1720-2"
-download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.1720-2/LLMHubX_20260910.1720-2_aarch64.dmg"
-sha256 = "725e71ba9e6c3cc61ab770082e37498cf40da42077d29761e82f1cc7573d18f3"
-changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.1720-2/app-CHANGELOG.md"
+release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.2135-3"
+download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/LLMHubX_20260910.2135-3_aarch64.dmg"
+sha256 = "cbee91c29d6e6736dc7f3a0b6f87f08fb0be60e64bd19fd885380866abe6e284"
+changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/app-CHANGELOG.md"
 
 [abi]
-current_level = 2
-lts_levels = [1]
+current_level = 3
+lts_levels = [1, 2]
 
 [[abi.packages]]
 level = 1
@@ -24,6 +24,13 @@ version = "20260830.1046-2"
 download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/2/20260830.1046-2/LLMHubX_Plugin_ABI_20260830.1046-2.tar.gz"
 sha256 = "fba6bed36f42d216e486de4c35fd0a1b36c5e23d1235b43f5d955e3579fe3a0e"
 documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/2/20260830.1046-2"
+
+[[abi.packages]]
+level = 3
+version = "20260910.2138-3"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/abi/3/20260910.2138-3/LLMHubX_Plugin_ABI_20260910.2138-3.tar.gz"
+sha256 = "f6eb1eab12d8c186661c1f5b18221cf499bf14fe3af87ac41e744624de748acb"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/abi/3/20260910.2138-3"
 
 [[sdks]]
 language = "rust"
@@ -44,6 +51,16 @@ download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/
 sha256 = "1860cbff9c405fa756cadb6017b0cde5d7521419a957c63db7876e6b360e4e2c"
 documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/2/20260831.1009-2"
 changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/2/20260831.1009-2/CHANGELOG.md"
+
+[[sdks]]
+language = "rust"
+target_abi_level = 3
+version = "20260910.2138-3"
+release_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/3/20260910.2138-3"
+download_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/3/20260910.2138-3/LLMHubX_Plugin_SDK_CMW_Rust_20260910.2138-3.tar.gz"
+sha256 = "a4f1a4728707c0d89891904e6fdd2672f02046beb0f12d374404f93b326cca71"
+documentation_url = "https://github.com/ykswang/LLMHubX/tree/main/sdks/cmw/rust/3/20260910.2138-3"
+changelog_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/sdks/cmw/rust/3/20260910.2138-3/CHANGELOG.md"
 
 [[plugins]]
 id = "llmhubx.minimize-reasoning"
@@ -164,14 +181,14 @@ summary = "为长期对话维护滚动摘要与近期原文"
 description = "参考 Pi Agent compaction 行为，为 Steward Agent 构建可审计的时间顺序 ContextView。"
 publisher_name = "LLMHubX"
 license = "MIT"
-latest = "plugins/llmhubx.pi-context/20260830.0010-1/release.toml"
-version = "20260830.0010-1"
-target_abi_level = 1
+latest = "plugins/llmhubx.pi-context/20260910.2138.3/release.toml"
+version = "20260910.2138.3"
+target_abi_level = 3
 language = "rust"
 permissions = ["agent.context.inference", "resource.kv.read", "resource.kv.write"]
 hooks = []
 provides = []
 requires = ["resource.kv"]
 contributions = ["context:pi-context"]
-bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.pi-context/20260830.0010-1/pi-context_20260830.0010-1.lhxp"
-sha256 = "9d719cd38be2303ec3bcdb32ad8aab6faa048c1d1011a8943e99629608158189"
+bundle_url = "https://raw.githubusercontent.com/ykswang/LLMHubX/main/plugins/llmhubx.pi-context/20260910.2138.3/pi-context_20260910.2138.3.lhxp"
+sha256 = "cae1361f8c8e4bae7d3601ff45c376f7c6c6e243329cac75938b90f7eba0f785"

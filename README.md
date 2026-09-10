@@ -6,11 +6,11 @@
 
 集中管理上游 Provider、模型与凭证，通过统一的本地入口连接 Codex、Claude Code、Kiro 等客户端，并在请求执行链中提供路由、观测和受控 WASM 插件能力。
 
-[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.1720-2/LLMHubX_20260910.1720-2_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.1720-2) · [Marketplace 索引](./marketplace.toml)
+[**下载 macOS 版**](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/LLMHubX_20260910.2135-3_aarch64.dmg) · [查看更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.2135-3) · [Marketplace 索引](./marketplace.toml)
 
 ![macOS](https://img.shields.io/badge/macOS-Apple%20Silicon-111827?style=flat-square&logo=apple&logoColor=white)
-![App](https://img.shields.io/badge/App-20260910.1720--2-2563eb?style=flat-square)
-![Plugin ABI](https://img.shields.io/badge/Plugin%20ABI-Level%202-059669?style=flat-square)
+![App](https://img.shields.io/badge/App-20260910.2135--3-2563eb?style=flat-square)
+![Plugin ABI](https://img.shields.io/badge/Plugin%20ABI-Level%203-059669?style=flat-square)
 ![WASM](https://img.shields.io/badge/Plugins-CMW-7c3aed?style=flat-square)
 
 </div>
@@ -31,7 +31,7 @@
 
 ## 快速开始
 
-1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.1720-2/LLMHubX_20260910.1720-2_aarch64.dmg)。
+1. 下载最新的 [Apple Silicon DMG](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/LLMHubX_20260910.2135-3_aarch64.dmg)。
 2. 打开 DMG，将 `LLMHubX.app` 拖入“应用程序”。
 3. 在 LLMHubX 中配置 Provider、上游模型、逻辑模型和本地 API Key。
 4. 在外部客户端中使用 LLMHubX 生成的本地地址与访问配置。
@@ -40,34 +40,36 @@
 
 | 项目 | 当前版本 |
 |---|---|
-| 版本 | `20260910.1720-2` |
+| 版本 | `20260910.2135-3` |
 | 平台 | macOS · Apple Silicon |
-| Plugin ABI | 当前 Level 2 · 最低兼容 Level 1 |
-| 安装包 | [LLMHubX_20260910.1720-2_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.1720-2/LLMHubX_20260910.1720-2_aarch64.dmg) |
-| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.1720-2) |
-| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.1720-2/SHA256SUMS.txt) |
+| Plugin ABI | 当前 Level 3 · 最低兼容 Level 1 |
+| 安装包 | [LLMHubX_20260910.2135-3_aarch64.dmg](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/LLMHubX_20260910.2135-3_aarch64.dmg) |
+| 更新说明 | [GitHub Release](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.2135-3) |
+| SHA-256 | [SHA256SUMS.txt](https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/SHA256SUMS.txt) |
 
 下载后可在终端核对文件：
 
 ```bash
-shasum -a 256 ~/Downloads/LLMHubX_20260910.1720-2_aarch64.dmg
+shasum -a 256 ~/Downloads/LLMHubX_20260910.2135-3_aarch64.dmg
 ```
 
 将输出与 Release 中的 `SHA256SUMS.txt` 对比。
 
 > [!IMPORTANT]
-> 当前 `20260910.1720-2` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
+> 当前 `20260910.2135-3` 为 adhoc 签名构建，尚未使用 Apple Developer ID 签名或完成 notarization，macOS Gatekeeper 不会自动信任。安装前请先核对 SHA-256；首次启动如被系统阻止，请在“系统设置 → 隐私与安全”中确认 App 来源后再决定是否允许打开。
 
 > [!WARNING]
-> `20260831.1009` 和 `20260905.0836` 的已发布二进制无法解析自身内部 `.0` 版本；`20260907.0228-2`（界面显示 `20260907.228.2`）也存在前导零解析缺陷。上述版本请手动下载安装 `20260910.1720-2`。本版本不再把新密钥写入 macOS Keychain。首次读取旧配置时可选择一次性导入旧密钥；macOS 可能对每项旧密钥请求一次授权，导入完成后不再访问 Keychain。也可选择“重新配置”，完全跳过 Keychain，并在修改配置前保留备份。
+> `20260831.1009` 和 `20260905.0836` 的已发布二进制无法解析自身内部 `.0` 版本；`20260907.0228-2`（界面显示 `20260907.228.2`）也存在前导零解析缺陷。上述版本请手动下载安装 `20260910.2135-3`。本版本不再把新密钥写入 macOS Keychain。首次读取旧配置时可选择一次性导入旧密钥；macOS 可能对每项旧密钥请求一次授权，导入完成后不再访问 Keychain。也可选择“重新配置”，完全跳过 Keychain，并在修改配置前保留备份。
 
 ### 本次更新
 
-修复 Main、Focus、专家及试运行请求在发送前被 DeepSeek 拒绝的问题；观测直接显示本地失败原因，末次失败不再提示继续尝试。保留串行工具与模型能力约束。此版本尚未包含插件业务指标改版，真实服务及原生安装包待用户验收。详情见[更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.1720-2)。
+插件观测改为插件声明的业务卡片，展示上下文占用、压缩效果和推理开销。需配套安装并启用新版 [Pi Context](./plugins/llmhubx.pi-context/20260910.2138.3/)。同时修复内部 DeepSeek 工具请求的自动参数冲突和本地失败诊断，以及新版插件的安装、市场下载校验与兼容绑定升级。保留现有工具执行和模型能力约束。
+
+已完成本地确定性测试、真实 WASM 与旧版摘要升级验证；真实服务和原生界面仍待用户验收。详细变更见[更新说明](https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.2135-3)。
 
 ## 插件开发
 
-当前公开契约为 **Plugin ABI Level 2**，并继续兼容 Level 1。Level 2 增加 Workflow 与 Expert Agent contribution；SDK 包包含目标 ABI 的 WIT 快照、生成绑定和接入文档。
+当前公开契约为 **Plugin ABI Level 3**，并继续兼容 Level 1/2。Level 3 增加类型化业务指标声明与上报；SDK 包包含目标 ABI 的 WIT、生成绑定、模板和接入文档。新版 pi-context 已接入业务观测，其他旧插件仍可使用基础诊断。
 
 ### ABI
 
@@ -75,6 +77,7 @@ shasum -a 256 ~/Downloads/LLMHubX_20260910.1720-2_aarch64.dmg
 |---:|---|---|---|---|
 | 1 | `20260829.2102-1` | [tar.gz](./abi/1/20260829.2102-1/LLMHubX_Plugin_ABI_20260829.2102-1.tar.gz?raw=1) | [目录](./abi/1/20260829.2102-1/) · [CHANGELOG](./abi/1/20260829.2102-1/CHANGELOG.md) | [SHA256SUMS](./abi/1/20260829.2102-1/SHA256SUMS.txt) |
 | 2 | `20260830.1046-2` | [tar.gz](./abi/2/20260830.1046-2/LLMHubX_Plugin_ABI_20260830.1046-2.tar.gz?raw=1) | [目录](./abi/2/20260830.1046-2/) · [CHANGELOG](./abi/2/20260830.1046-2/CHANGELOG.md) | [SHA256SUMS](./abi/2/20260830.1046-2/SHA256SUMS.txt) |
+| 3 | `20260910.2138-3` | [tar.gz](./abi/3/20260910.2138-3/LLMHubX_Plugin_ABI_20260910.2138-3.tar.gz?raw=1) | [目录](./abi/3/20260910.2138-3/) · [CHANGELOG](./abi/3/20260910.2138-3/CHANGELOG.md) | [SHA256SUMS](./abi/3/20260910.2138-3/SHA256SUMS.txt) |
 
 ### SDK
 
@@ -82,6 +85,7 @@ shasum -a 256 ~/Downloads/LLMHubX_20260910.1720-2_aarch64.dmg
 |---|---|---:|---|---|---|
 | CMW | Rust | 1 | `20260831.1009-1` | [tar.gz](./sdks/cmw/rust/1/20260831.1009-1/LLMHubX_Plugin_SDK_CMW_Rust_20260831.1009-1.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/1/20260831.1009-1/) |
 | CMW | Rust | 2 | `20260831.1009-2` | [tar.gz](./sdks/cmw/rust/2/20260831.1009-2/LLMHubX_Plugin_SDK_CMW_Rust_20260831.1009-2.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/2/20260831.1009-2/) |
+| CMW | Rust | 3 | `20260910.2138-3` | [tar.gz](./sdks/cmw/rust/3/20260910.2138-3/LLMHubX_Plugin_SDK_CMW_Rust_20260910.2138-3.tar.gz?raw=1) | [目录与更新说明](./sdks/cmw/rust/3/20260910.2138-3/) |
 
 ## 官方插件
 
@@ -171,18 +175,18 @@ shasum -a 256 ~/Downloads/LLMHubX_20260910.1720-2_aarch64.dmg
 
 ### Pi Context
 
-为 Steward Agent 提供滚动摘要与近期原文组成的时间顺序 ContextView。
+维护滚动摘要与近期原文，并提供上下文占用、压缩效果和业务事件。需先安装 ABI 3 App，再安装并启用新版插件；详见[升级说明](./plugins/llmhubx.pi-context/20260910.2138.3/README.md)。
 
 | 项目 | 内容 |
 |---|---|
 | 插件 ID | `llmhubx.pi-context` |
-| 版本 | `20260830.0010-1` |
+| 版本 | `20260910.2138.3` |
 | Runtime | CMW |
 | Agent contribution | `context:pi-context` |
 | 依赖能力 | `resource.kv` |
 | 权限 | `agent.context.inference`、`resource.kv.read`、`resource.kv.write` |
-| 下载 | [pi-context_20260830.0010-1.lhxp](./plugins/llmhubx.pi-context/20260830.0010-1/pi-context_20260830.0010-1.lhxp?raw=1) |
-| 版本信息 | [release.toml](./plugins/llmhubx.pi-context/20260830.0010-1/release.toml) · [CHANGELOG](./plugins/llmhubx.pi-context/20260830.0010-1/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.pi-context/20260830.0010-1/SHA256SUMS.txt) |
+| 下载 | [pi-context_20260910.2138.3.lhxp](./plugins/llmhubx.pi-context/20260910.2138.3/pi-context_20260910.2138.3.lhxp?raw=1) |
+| 版本信息 | [release.toml](./plugins/llmhubx.pi-context/20260910.2138.3/release.toml) · [CHANGELOG](./plugins/llmhubx.pi-context/20260910.2138.3/CHANGELOG.md) · [SHA256SUMS](./plugins/llmhubx.pi-context/20260910.2138.3/SHA256SUMS.txt) |
 
 ## 发布与目录规则
 
