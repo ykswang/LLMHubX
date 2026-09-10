@@ -1,11 +1,11 @@
 [app]
-version = "20260910.2135-3"
+version = "20260910.2201-3"
 current_abi_level = 3
 min_abi_level = 1
-release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.2135-3"
-download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/LLMHubX_20260910.2135-3_aarch64.dmg"
-sha256 = "cbee91c29d6e6736dc7f3a0b6f87f08fb0be60e64bd19fd885380866abe6e284"
-changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2135-3/app-CHANGELOG.md"
+release_url = "https://github.com/ykswang/LLMHubX/releases/tag/app-v20260910.2201-3"
+download_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2201-3/LLMHubX_20260910.2201-3_aarch64.dmg"
+sha256 = "6fa6ee182a32824cc8ea857913b163f8a2af7790d6d712e95d73ce4ad102fe02"
+changelog_url = "https://github.com/ykswang/LLMHubX/releases/download/app-v20260910.2201-3/app-CHANGELOG.md"
 
 [abi]
 current_level = 3
